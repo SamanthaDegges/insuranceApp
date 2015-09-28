@@ -1,0 +1,57 @@
+<h3 class="text-center">My Insured Assets Center</h3>
+
+<div class="row">
+
+    <!-- COLUMN ONE NAMED VIEW -->
+    <div class="col-sm-10 col-sm-offset-1 co-lg-12 col-md-12">
+    <form class="form-inline">
+      <h4>Add an Asset</h4>
+      <div class="form-group">
+        <label for="name">What would you like to name this asset?</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Kitchen Table">
+      </div>
+      <div class="form-group">
+        <label for="cost">Cost of this item (each)</label>
+        <input type="text" class="form-control" placeholder="1800.00">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="text" class="form-control" placeholder="1">
+      </div>
+      <div class="form-group">
+        <label for="room">Which room of the home is this piece of property in?</label>
+        <input type = "text" class="form-control" placeholder = "Formal dining room">
+      </div>
+      <br>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Is this an Antique?
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Has this antique been appraised?
+        </label>
+      </div>
+      <button class="btn btn-primary" ui-sref = "">Submit</button>
+    </form>
+  </div>
+
+
+  <!-- COLUMN TWO NAMED VIEW -->
+  <div class="col-sm-8 col-sm-offset-2">
+    <div>
+      <h4>My Existing Assets: </h4>
+      <ol id = "listings">
+        <li ng-repeat = "listing in listings" >
+          <strong>Name: </strong>{{listing.name}}
+          <br><strong>Kind: </strong>{{listing.kind}}  <strong>Variety: </strong>{{listing.variety}}
+          <br><strong>Gender: </strong>{{listing.gender}}  <strong>Age: </strong>{{listing.age}}
+          <br><strong>Description: </strong>{{listing.description}}</li>
+
+      </ol>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to IYA Protection</title>
+  <!-- <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src= '/bower_components/angular/angular.min.js'></script>
+  <script src = '/bower_components/bootstrap/dist/css/bootstrap.min.css'></script> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css"> -->
+  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="app.js"></script>
+</head>
+<body ng-app="routerApp">
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
+      <li role="presentation"><a ui-sref="assets">Manage Assets</a></li>
+      <!-- <li role="presentation"><a ui-sref="newAsset">Update Assets</a></li> -->
+      <li role="presentation"><a ui-sref="users">Manage Account</a></li>
+    </ul>
+    <div ui-view></div>
+  </div>
+  <script src = "https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src = "src/controllers/mainController.js"></script>
+  <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src = "/bower_components/bootstrap/js/bootstrap.min.js"></script> -->
+</body>
+</html>
